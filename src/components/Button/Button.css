@@ -1,0 +1,38 @@
+.button {
+    padding: 4px 8px;
+}
+
+.type-success {
+    background-color: rgba(34, 106, 34, 0.602);
+}
+.type-danger {
+    background-color: rgba(176, 18, 18, 0.602);
+}
+.type-warning {
+    background-color: rgba(94, 100, 28, 0.602);
+}
+
+.type-info {
+    background-color: cornflowerblue;
+}
+
+.type-diferente {
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(91, 121, 9, 1) 35%,
+        rgba(0, 212, 255, 1) 100%
+    );
+}
+
+.size-big {
+    font-size: 42px;
+    padding: 8px 16px;
+}
+.size-medium {
+    font-size: 32px;
+    padding: 6px 12px;
+}
+.size-small {
+    padding: 4px 8px;
+}
