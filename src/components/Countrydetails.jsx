@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import CardCountry, { CardCountryTeste } from './CardCountry';
 import CurrencyCountryCard from './CurrencyCountryCard';
+import ContainerCountriesCurrency from './ContainerCountriesCurrency/ContainerCountriesCurrency';
 
 const CountryDetails = () => {
     const oQueTEmAquiDEntro = useParams({});
@@ -55,12 +56,18 @@ const CountryDetails = () => {
                     style={{
                         color: 'red ',
                         display: 'grid',
-                        gridTemplateColumns: '1fr 1fr 1fr 1fr',
-                        gap: '16px',
                     }}>
-                    <Link key={324} to={`/country/Portugal`}>
-                        <CurrencyCountryCard flag={'dsfds'} name={'TESTE'} />
-                    </Link>
+                    <ContainerCountriesCurrency
+                        currency={currencyForThisCountry}
+                    />
+                    <h1>SUICA</h1>
+                    <ContainerCountriesCurrency currency="CHF" />
+
+                    <h1>USD</h1>
+                    <ContainerCountriesCurrency currency="usd" />
+
+                    <h1>CUBANOS</h1>
+                    <ContainerCountriesCurrency currency="CUP" />
                 </div>
             </>
         )
